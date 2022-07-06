@@ -24,6 +24,7 @@ body {
 
 .item {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     background-color: hsl(225, 100%, 98%);
@@ -34,7 +35,7 @@ body {
 
 .item-label {
     display: flex; 
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     flex: 2;
     justify-content: center;
     margin: 0px 20px 0px 20px;
@@ -121,4 +122,10 @@ p {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 450px) {
+    .card {
+        width: 100vw;
+    }
 }
